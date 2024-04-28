@@ -13,6 +13,7 @@ function authentication(req, res, next) {
     if (decode.role !== 'admin') {
       throw { name: 'Unauthorized' };
     } else {
+      req.user = decode;
       next();
     }
   } catch (error) {

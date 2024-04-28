@@ -9,6 +9,19 @@ class phoneController {
       next(error);
     }
   }
+
+  static async createPhone(req, res) {
+    try {
+      const userId = req.user.id;
+      const { brand, model, colors, price, stock } = req.body;
+
+      const newPhone = await Phone.create({ brand, model, colors, price, stock, userId });
+
+      res.status(201).json(newPhone);
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 module.exports = phoneController;
