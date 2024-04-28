@@ -2,7 +2,7 @@
   {
     "brand": "Samsung",
     "model": "Galaxy S21",
-    "colors": ["Black", "White", "Red"],
+    "colors": "Black",
     "price": 12000000,
     "stock": 50,
     "userId": 1
@@ -10,7 +10,7 @@
   {
     "brand": "Apple",
     "model": "iPhone 13",
-    "colors": ["Black", "Blue", "Green"],
+    "colors": "Black",
     "price": 15000000,
     "stock": 40,
     "userId": 1
@@ -18,7 +18,7 @@
   {
     "brand": "Xiaomi",
     "model": "Redmi Note 10",
-    "colors": ["Blue", "Black", "White"],
+    "colors": "Black",
     "price": 5000000,
     "stock": 60,
     "userId": 1
@@ -26,7 +26,7 @@
   {
     "brand": "OnePlus",
     "model": "OnePlus 9 Pro",
-    "colors": ["Black", "Silver", "Blue"],
+    "colors": "Black",
     "price": 16000000,
     "stock": 30,
     "userId": 1

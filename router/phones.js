@@ -5,5 +5,6 @@ const authentication = require('../middleware/authentication');
 
 phoneRouter.use(authentication);
 phoneRouter.get('/', phoneController.getAllPhones);
+phoneRouter.post('/', phoneController.createPhone);
 
 module.exports = phoneRouter;
