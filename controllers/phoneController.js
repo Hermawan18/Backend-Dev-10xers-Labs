@@ -35,6 +35,17 @@ class phoneController {
       next(error);
     }
   }
+
+  static async deletePhone(req, res, next) {
+    try {
+      const { id } = req.params;
+
+      await Phone.destroy({ where: { id } });
+      res.status(200).json({ message: 'Phone has been deleted' });
+    } catch (error) {
+      next(error);
+    }
+  }
 }
 
 module.exports = phoneController;
