@@ -7,5 +7,6 @@ phoneRouter.use(authentication);
 phoneRouter.get('/', phoneController.getAllPhones);
 phoneRouter.post('/', phoneController.createPhone);
 phoneRouter.put('/:id', phoneController.updatePhone);
+phoneRouter.delete('/:id', phoneController.deletePhone);
 
 module.exports = phoneRouter;
