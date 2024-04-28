@@ -5,7 +5,6 @@ const { comparePassword } = require('../helpers/bcrypt');
 class userController {
   static async login(req, res, next) {
     try {
-      console.log('masuk login');
       const { name, password } = req.body;
 
       const user = await User.findOne({ where: { name } });
@@ -21,7 +20,6 @@ class userController {
       const access_token = signToken({ id: user.id, name: user.name, role: user.role });
       res.status(200).json({ access_token });
     } catch (error) {
-      console.log(error);
       next(error);
     }
   }

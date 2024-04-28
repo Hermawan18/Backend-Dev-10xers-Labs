@@ -11,7 +11,7 @@ function authentication(req, res, next) {
     const decode = verifyToken(token);
 
     if (decode.role !== 'admin') {
-      throw { name: 'Unauthorized' };
+      throw { name: 'ForbiddenAccess' };
     } else {
       req.user = decode;
       next();
