@@ -41,14 +41,6 @@ _Response (401 - Unauthorized)_
 }
 ```
 
-_Response (404 = Not Found)_
-
-```json
-{
-  "message": "Data Not Found"
-}
-```
-
 &nbsp;
 
 ## 2. GET /phones

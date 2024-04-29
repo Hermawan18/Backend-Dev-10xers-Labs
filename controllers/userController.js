@@ -9,7 +9,7 @@ class userController {
 
       const user = await User.findOne({ where: { name } });
       if (!user) {
-        throw { name: 'NotFound' };
+        throw { name: 'Unauthorized' };
       }
 
       const checkPassword = comparePassword(password, user.password);
